@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+    <h1 id="title">Pesquisa de Satisfação - Canetoid</h1>
+    <p id="description">Obrigado por nos ajudar a melhorar cada vez mais!</p>
+    
+    <form id="survey-form">
+
+        <div>
+            <label for="name" id="name-label">Nome </label>
+            <input id="name" type="text" placeholder="Digite seu nome" required />
+            <label for="email" id="email-label">Email </label>
+            <input id="email" type="email" placeholder="Digite seu email" required />
+            <label for="number" id="number-label">Idade </label>
+            <input id="number" type="number" min="15" max="99" placeholder="Digite sua idade"/>
+            <label for="dropdown">Do que você mais gosta em nossos produtos?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="">Selecione uma opção</option>
+                <option value="1">Qualidade</option>
+                <option value="2">Durabilidade</option>
+                <option value="3">Design</option>
+            </select>
+            <p id="recomendacao">Você recomendaria nossos produtos para um amigo?</p>
+            <label for="recomendacao" id="radio-sim-label" class="radio-label"><input type="radio" name="recomendacao" id="radio-sim" value="sim" class="input-radio"/>Sim </label>
+            <label for="recomendacao" id="radio-nao-label" class="radio-label"><input type="radio" name="recomendacao" id="radio-nao" value="nao" class="input-radio"/>Não </label>
+            <p id="melhorias">Na sua opinião, como podemos deixar nossos produtos melhores?</p>
+            <label class="opcao"><input type="checkbox" value="opcao1"/>Aumentar durabilidade da tinta</label>
+            <label class="opcao"><input type="checkbox" value="opcao2"/>Mais diversidade de cores</label>
+            <label class="opcao"><input type="checkbox" value="opcao3"/>Estou satisfeito com o produto atual</label>
+            <p id="experiencia">Se quiser, pode detalhar no campo abaixo sua experiência com nossas canetas</p>
+            <textarea name="exp" id="exp" cols="30" rows="10"></textarea>
+            <button type="submit" id="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
