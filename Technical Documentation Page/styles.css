@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+body {
+    min-width: 300px;
+    background-color: #fff;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-color: #ddd;
+}
+
+#navbar header {
+    font-size: 1.9em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-top: solid 1px;
+    text-align: left;
+    padding: 10px 15px;
+}
+
+#navbar a {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+a, a:visited, a:active {
+    color: inherit; 
+    text-decoration: none;
+}
+
+#main-doc {
+    margin-left: 295px;
+    margin-right: 15px;
+    padding: 25px;
+}
+
+#main-doc header {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+code {
+    display: block;
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#main-doc section {
+    margin: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        max-height: 250px;
+        width: 100%;
+        background-color: #ddd;
+        margin: 0;
+        z-index: 1;
+        border-bottom: solid;
+    }
+
+    #navbar ul {
+        height: 200px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin: 15px;
+    }
+}
