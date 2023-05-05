@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/577677b0fc.js" crossorigin="anonymous"></script>
     <title>Personal Portfolio</title>
 </head>
 <body>
     <!-- NAV MENU -->
     <nav id="navbar" class="nav">
         <ul class="nav-menu">
-            <li class="nav-links"><a href="#">Info</a></li>
-            <li class="nav-links"><a href="#">Projects</a></li>
-            <li class="nav-links"><a href="#">Contact</a></li>
+            <li class="nav-links"><a href="#welcome-section">Info</a></li>
+            <li class="nav-links"><a href="#projects">Projects</a></li>
+            <li class="nav-links"><a href="#contacts">Contact</a></li>
         </ul>
     </nav>
 
@@ -30,21 +31,33 @@
         <h1 class="projects_intro">Some of the things I've worked on</h1>
         <div class="projects_grid">
             <div class="projects">
-                <p class="projects_title">Survey Form</p>
-                <img src="https://iili.io/HSVOGM7.md.png" alt="survey form" class="projects_image">
+                <p class="project-tile project-tile__left"><a href="https://github.com/paulohenrique-gh/FCCProjects/tree/main/Survey%20Form" target="_blank">Survey Form</a></p>
             </div>
             <div class="projects">
-                <p class="projects_title">Tribute Page</p>
-                <img src="https://iili.io/HSVe2Dl.md.png" alt="tribute page" class="projects_image">
+                <p class="project-tile project-tile__right"><a href="https://github.com/paulohenrique-gh/FCCProjects/tree/main/Tribute%20Page" target="_blank">Tribute Page</a></p>
             </div>
             <div class="projects">
-                <p class="projects_title">Technical Documentation Page</p>
-                <img src="https://iili.io/HSVezRj.md.png" alt="technical documentation" class="projects_image">
+                <p class="project-tile project-tile__left"><a href="https://github.com/paulohenrique-gh/FCCProjects/tree/main/Technical%20Documentation%20Page" target="_blank">Technical Documentation Page</a></p>
             </div>
             <div class="projects">
-                <p class="projects_title">Product Landing Page</p>
-                <img src="https://iili.io/HSVeNgn.md.png" alt="product landing page" class="projects_image">
+                <p class="project-tile project-tile__right"><a href="https://github.com/paulohenrique-gh/FCCProjects/tree/main/Product%20Landing%20Page" target="_blank">Product Landing Page</a></p>
             </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacts" class="contacts-section">
+        <h2 class="contact-section-header">Get in touch</h2>
+        <div class="contact-section__list">
+            <a href="https://github.com/paulohenrique-gh" id="profile-link" class="contact-section__links" target="_blank">
+                <i class="fa-brands fa-github" target="_blank"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/paulo-henrique-de-meneses-oliveira-9b559b268/" id="linkedin-link" class="contact-section__links" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:someone@somewhere.com" id="email-link" class="contact-section__links" target="_blank">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
         </div>
     </section>
 </body>
